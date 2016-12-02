@@ -1,0 +1,2 @@
+class Sint < ApplicationRecord
+end

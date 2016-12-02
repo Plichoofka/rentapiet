@@ -1,0 +1,2 @@
+class Piet < ApplicationRecord
+end
