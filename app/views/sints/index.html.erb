@@ -1,6 +1,7 @@
 <h1>Rent a Piet</h1>
 
-<% @sint.each do |sint| %>
-  <p><%= sint.name, sint.image_url %></p>
+<% @sints.each do |sint| %>
+  <p><%= sint.name %></p>
+    <p><%= image_tag sint.image_url %></p>
 
 <% end %>
