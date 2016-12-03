@@ -1,3 +1,27 @@
-// Place all the styles related to the piets controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+body {background-color: #f9f9ed;}
+h1 {font-style: verdana, 24px; }
+h2 {font: verdana, 20px;}
+div { font: verdana, 16px;
+  position:relative;
+  top: 40px;
+  left:40px;
+  }
+span {font-weight: bold;}
+p img
+  {width: 300px;
+
+  }
+button {position: relative;
+  bottom:0px;
+  left:10px;
+  background-color:#8B0000;/*rood*/
+  border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    font-color:black;
+
+}
