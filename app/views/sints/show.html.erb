@@ -1,19 +1,31 @@
+<body>
+<h1>
+
+  Welcome to <%= @sint.name %>
+</h1>
+
 <p>
-  <strong>Name:</strong>
-  <%= @sint.name %>
+  <%= image_tag @sint.image_url %>
+
 </p>
 
-<h4>List of Piets</h4>
+<h2>List of Piets</h2>
+
+<div class="piet-container">
 
 <% if @sint.piets.any? %>
-  <ul>
+
     <% @sint.piets.each do |piet| %>
-      <p><%= link_to piet.name, piet_path(piet.id) %></p>
+    <div class="piet-individual">
+      <p><%= link_to "#{piet.name} - click for details", piet_path(piet.id)  %></p>
+      <p><%= image_tag piet.image_url %></p>
+    </div>
     <% end %>
-  </ul>
+
 <% else %>
   <p>This Sint doesn't have any Piet yet.</p>
 <% end %>
+/<div>
 
-<%= link_to 'Edit', edit_sint_path(@sint) %>
-<%= link_to 'Home', sints_path %>
+<button><%= link_to 'Home', sints_path %></button>
+</body>
