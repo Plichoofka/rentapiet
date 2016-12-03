@@ -1,9 +1,17 @@
+<style>
+body {background-color: lightgrey;}
+p {font: "Open Sans", sans-serif;
+color: darkblue;
+}
+</style>
+<body>
 <h1>Piet</h1>
 
 <p> Hi, this is the Piet you selected</p>
   <p>Name:<%= @piet.name %></p>
   <p>Age:<%= @piet.age %></p>
-  <p><%= @piet.gender_to_s %></p>
-  <p><%= @piet.theme %></p>
-  <p><%= @piet.sint.name %></p>
+  <p>Gender:<%= @piet.gender_to_s %></p>
+  <p>Theme:<%= @piet.theme %></p>
+  <p>Team:<%= @piet.sint.name %></p>
   <p><%= image_tag @piet.image_url %></p>
+</body>
