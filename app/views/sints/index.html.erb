@@ -13,7 +13,8 @@
 <div>
 <% @sints.each do |sint| %>
 <hr />
-  <p style="color:black; font-size:28px; font-weight: bold"><%= sint.name %></p>
+  <p style="color:black; font-size:28px; font-weight: bold" <%= sint.name %></p>
+    <p><%= link_to sint.name, sint_path(sint.id) %></p>
   <p style="border-radius:25px"><%= image_tag sint.image_url %></p>
 </div>
 
@@ -21,6 +22,8 @@
 
 <div>
   <p style="font-size:30px">Click HERE to subscribe as a volunteer Piet!</p>
+  <%= link_to "[New Piet]", new_piet_path %>
+
 </div>
 </body>
 </html>

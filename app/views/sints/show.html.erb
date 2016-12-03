@@ -8,7 +8,7 @@
 <% if @sint.piets.any? %>
   <ul>
     <% @sint.piets.each do |piet| %>
-      <li><%= piet.name %></li>
+      <p><%= link_to piet.name, piet_path(piet.id) %></p>
     <% end %>
   </ul>
 <% else %>
@@ -16,4 +16,4 @@
 <% end %>
 
 <%= link_to 'Edit', edit_sint_path(@sint) %>
-<%= link_to 'Back', sints_path %>
+<%= link_to 'Home', sints_path %>

@@ -12,7 +12,8 @@ class PietsController < ApplicationController
   end
 
   def create
-    @piet = Piet.new( piets_params )
+    piet_params= params.require(:piet).permit( :name, :age, :gender, :theme, :image_url, :sint_id)
+    @piet = Piet.new(piet_params)
 
       if @piet.save
         redirect_to @piet
@@ -20,5 +21,4 @@ class PietsController < ApplicationController
        render 'new'
      end
   end
-puts "hoi"
 end
