@@ -2,23 +2,6 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root "sints#index"
 
-    get "sints" => "sints#index"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    # get "piet"=>"piet#show"
-
-    resources :piets
-
+  resources :piets
+  resources :sints
 end

@@ -1,0 +1,19 @@
+<p>
+  <strong>Name:</strong>
+  <%= @sint.name %>
+</p>
+
+<h4>List of Piets</h4>
+
+<% if @sint.piets.any? %>
+  <ul>
+    <% @sint.piets.each do |piet| %>
+      <li><%= piet.name %></li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>This Sint doesn't have any Piet yet.</p>
+<% end %>
+
+<%= link_to 'Edit', edit_sint_path(@sint) %>
+<%= link_to 'Back', sints_path %>
