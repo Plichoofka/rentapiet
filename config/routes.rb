@@ -5,4 +5,20 @@ Rails.application.routes.draw do
     get "sints" => "sints#index"
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+    # get "piet"=>"piet#show"
+
+    resources :piets
+
 end
