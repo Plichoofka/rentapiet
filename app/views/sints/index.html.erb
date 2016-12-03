@@ -1,29 +1,20 @@
-<html>
-<html>
-<body background="http://arienshbg.nl/wp-content/uploads/2016/10/sint-pepernoten-490x259.png">
-
-<h1 style="color: black; font-size: 60px; font-family: verdana">Rent a Piet</h1>
-
-<div>
-  <p style= "font-size:17px; font-weight: bold">Welcome to Rent a Piet! We are THE Sinterklaas and Piet renting website in The Netherlands! Based on our active community of volunteers, we aim to rent an ideal package for every Dutch household. Call the phone number regarding your favourite team, and make an appointment right away!</p>
-  <p style= "font-size:17px; font-weight: bold">Click on your favourite Sinterklaas, and watch which great helpers are dedicated to this Holy man.</p>
-  <p style= "font-size:17px; font-weight: bold">Also, it would be <stron>Great</strong> if you would subcribe yourself as a Pieter volunteer! Click on the link on the bottom of the page.</p>
+<body class="body">
+<div class="top_banner">
+<h1 class="top_title">Rent a Piet</h1>
 </div>
 
-<div>
-<% @sints.each do |sint| %>
-<hr />
-  <p style="color:black; font-size:28px; font-weight: bold" <%= sint.name %></p>
-    <p><%= link_to sint.name, sint_path(sint.id) %></p>
-  <p style="border-radius:25px"><%= image_tag sint.image_url %></p>
+<div class="paragraphs_top">
+  <p>Welcome to Rent a Piet! We are THE Sinterklaas and Piet renting website in The Netherlands! Based on our active community of volunteers, we aim to rent an ideal package for every Dutch household. Call the phone number regarding your favourite team, and make an appointment right away!</p>
+  <p>Click on your favourite Sinterklaas, and watch which great helpers are dedicated to this Holy man.</p>
+  <p>Also, it would be <strong>Great</strong> if you would subcribe yourself as a Pieter volunteer! Click on the link on the bottom of the page.</p>
 </div>
 
-<% end %>
+  <% @sints.each do |sint| %>
+    <div class="sints">
+      <p><%= link_to sint.name, sint_path(sint.id) %></p>
+      <p><%= image_tag sint.image_url %></p>
+    </div>
+  <% end %>
 
-<div>
-  <p style="font-size:30px">Click HERE to subscribe as a volunteer Piet!</p>
-  <%= link_to "[New Piet]", new_piet_path %>
-
-</div>
+<p class="subscribe">Click <%= link_to "HERE", new_piet_path %> to subscribe as a volunteer Piet</p>
 </body>
-</html>

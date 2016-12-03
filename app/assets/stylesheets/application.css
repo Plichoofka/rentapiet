@@ -1,15 +1,46 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+/* .background-image {
+   background-image: url("http://arienshbg.nl/wp-content/uploads/2016/10/sint-pepernoten-490x259.png");
+}*/
+.body{
+  background-color: #f9f9ed;
+}
+.top_banner{
+  background:#8B0000;
+  border:1px solid #CCC;
+  border-radius: 25px;
+  width:100%;
+  margin:0px auto;
+  height:140px;
+}
+.top_title {
+  color: black;
+  font-size: 60px;
+  font-family: verdana;
+  position: absolute;
+  top: 0px;
+}
+.paragraphs_top {
+  color:black;
+  font-size:17px;
+  font-weight: bold;
+}
+
+.sints {
+  color:black;
+  font-size:28px;
+  font-weight: bold;
+  display: inline-block;
+  vertical-align: top;
+  padding: 1px;
+  margin: 10px;
+}
+
+.sints img {height: 200px;
+width: 100%;
+  }
+
+.subscribe{
+  font-size:30px;
+  color:black;
+  bottom: 0;
+}
