@@ -1,28 +1,39 @@
 <h1>New Piet</h1>
 
-<%= form_for @piet do |f| %>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
+<p>Hi!</p>
+<p> Want to join our organisation? Just fill in this form and you're on!</p>
 
+<%= form_for @piet do |f| %>
+  <div class="form">  <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+<div class="form">
     <%= f.label :age %>
     <%= f.number_field :age %>
-
-
-    <%= f.label :gender %><br />
+</div>
+<div class="form">
+    <%= f.label :gender %>
     <%= f.label :gender, "Male", :value => "true"  %>
     <%= f.radio_button :gender, true %>
-    <%= f.label :gender, "Female", :value => "false" %>
+    <%= f.label :gender, "Gender Female", :value => "false" %>
     <%= f.radio_button :gender, false %>
-
+</div>
+<div class="form">
 
 <%= f.label :theme %>
     <%= f.text_field :theme %>
-
-    <%= f.label :image_url %>
-    <%= f.text_field :image_url %>
-    <%= f.submit "Create" %>
-
+</div>
+<div class="form">
     <%= f.label :sint %>
     <%= f.collection_select(:sint_id, Sint.all, :id, :name) %>
+</div>
+<div class="form">
+    <%= f.label :image_url %>
+    <%= f.text_field :image_url %>
+  </div>
+  <div class="form">
+    <%= f.submit "Create" %>
+</div>
+
 
 <% end %>

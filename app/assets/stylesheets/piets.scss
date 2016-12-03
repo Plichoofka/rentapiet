@@ -25,3 +25,31 @@ button {position: relative;
     font-color:black;
 
 }
+form {font-weight: bold;
+font:verdana, 16px;}
+
+.form {background: -webkit-linear-gradient(bottom, #e85d45 40px);
+  background: -moz-linear-gradient(bottom, #e85d45 40px);
+  background: linear-gradient(bottom, #e85d45 40px);
+  margin: auto;
+  position: relative;
+  width: 600px;
+  height: 100px;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 24px;
+  font-weight: bold;
+  color: #e85d45;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px;
+
+}
+input {
+  width: 375px;
+  display: block;
+  border: 1px solid #999;
+  height: 25px;
+
+}
