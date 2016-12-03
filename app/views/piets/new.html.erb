@@ -4,6 +4,11 @@
 <p> Want to join our organisation? Just fill in this form and you're on!</p>
 
 <%= form_for @piet do |f| %>
+  <ul>
+    <% @piet.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+  </ul>
   <div class="form">  <%= f.label :name %>
     <%= f.text_field :name %>
   </div>
